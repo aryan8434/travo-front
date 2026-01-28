@@ -1,5 +1,5 @@
-import HotelCard from "./HotelCard";
-import BusCard from "./BusCard";
+import HotelCard from "./HotelCard.jsx";
+import BusCard from "./BusCard.jsx";
 
 export default function Message({ msg, onBook }) {
   // USER MESSAGE
