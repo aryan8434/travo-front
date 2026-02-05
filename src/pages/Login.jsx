@@ -87,11 +87,25 @@ export default function Login({ setToken, goSignup }) {
           onChange={(e) => handleUsernameChange(e.target.value)}
         />
         <div className="text-xs mb-2 space-y-1">
-          <div className={usernameValidation.letterCount >= 4 ? "text-green-400" : "text-red-400"}>
-            {usernameValidation.letterCount >= 4 ? "✅" : "❌"} Letters: {usernameValidation.letterCount}/4
+          <div
+            className={
+              usernameValidation.letterCount >= 4
+                ? "text-green-400"
+                : "text-red-400"
+            }
+          >
+            {usernameValidation.letterCount >= 4 ? "✅" : "❌"} Letters:{" "}
+            {usernameValidation.letterCount}/4
           </div>
-          <div className={usernameValidation.digitCount >= 2 ? "text-green-400" : "text-red-400"}>
-            {usernameValidation.digitCount >= 2 ? "✅" : "❌"} Digits: {usernameValidation.digitCount}/2
+          <div
+            className={
+              usernameValidation.digitCount >= 2
+                ? "text-green-400"
+                : "text-red-400"
+            }
+          >
+            {usernameValidation.digitCount >= 2 ? "✅" : "❌"} Digits:{" "}
+            {usernameValidation.digitCount}/2
           </div>
         </div>
 
@@ -103,11 +117,25 @@ export default function Login({ setToken, goSignup }) {
           onChange={(e) => handlePasswordChange(e.target.value)}
         />
         <div className="text-xs mb-2 space-y-1">
-          <div className={passwordValidation.letterCount >= 4 ? "text-green-400" : "text-red-400"}>
-            {passwordValidation.letterCount >= 4 ? "✅" : "❌"} Letters: {passwordValidation.letterCount}/4
+          <div
+            className={
+              passwordValidation.letterCount >= 4
+                ? "text-green-400"
+                : "text-red-400"
+            }
+          >
+            {passwordValidation.letterCount >= 4 ? "✅" : "❌"} Letters:{" "}
+            {passwordValidation.letterCount}/4
           </div>
-          <div className={passwordValidation.digitCount >= 1 ? "text-green-400" : "text-red-400"}>
-            {passwordValidation.digitCount >= 1 ? "✅" : "❌"} Digits: {passwordValidation.digitCount}/1
+          <div
+            className={
+              passwordValidation.digitCount >= 1
+                ? "text-green-400"
+                : "text-red-400"
+            }
+          >
+            {passwordValidation.digitCount >= 1 ? "✅" : "❌"} Digits:{" "}
+            {passwordValidation.digitCount}/1
           </div>
         </div>
 
@@ -115,7 +143,8 @@ export default function Login({ setToken, goSignup }) {
 
         <button
           onClick={handleLogin}
-          className="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded"
+          className={`w-full py-2 rounded ${"bg-blue-600 hover:bg-blue-700"}`}
+          cursor="pointer"
         >
           Login
         </button>

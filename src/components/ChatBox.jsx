@@ -379,10 +379,12 @@ export default function ChatBox({
           onKeyDown={handleKey}
           rows={1}
           className="flex-1 bg-gray-700 p-2 rounded resize-none text-sm"
+          placeholder="Type message to book hotels, buses, flights or plan trips..."
         />
         <button
           onClick={sendMsg}
           className="bg-blue-600 px-3 sm:px-4 py-2 rounded text-sm sm:text-base font-medium"
+          cursor="pointer"
         >
           Send
         </button>
