@@ -6,10 +6,7 @@ import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
 
 function App() {
-  const API_URL =
-    import.meta.env.MODE === "production"
-      ? "https://travo-y7yh.onrender.com"
-      : "http://localhost:5000";
+  const API_URL = import.meta.env.PROD ? "" : (import.meta.env.VITE_API_URL || "http://localhost:5000");
   const [tab, setTab] = useState("home");
   const [wallet, setWallet] = useState(0);
   const [bookings, setBookings] = useState([]);

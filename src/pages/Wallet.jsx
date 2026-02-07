@@ -1,8 +1,5 @@
 export default function Wallet({ wallet, setWallet }) {
-  const API_URL =
-    import.meta.env.MODE === "production"
-      ? "https://travo-y7yh.onrender.com"
-      : "http://localhost:5000";
+  const API_URL = import.meta.env.PROD ? "" : (import.meta.env.VITE_API_URL || "http://localhost:5000");
 
   async function addMoney(amount = 5000) {
     try {

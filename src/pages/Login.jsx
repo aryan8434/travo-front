@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const API_URL =
   import.meta.env.MODE === "production"
-    ? "https://travo-y7yh.onrender.com"
+    ? "http://localhost:5000"
     : "http://localhost:5000";
 
 export default function Login({ setToken, goSignup }) {

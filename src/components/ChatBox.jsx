@@ -4,7 +4,7 @@ import Message from "./Message";
 // API URL based on environment
 const API_URL =
   import.meta.env.MODE === "production"
-    ? "https://travo-y7yh.onrender.com"
+    ? "http://localhost:5000"
     : "http://localhost:5000";
 
 export default function ChatBox({
